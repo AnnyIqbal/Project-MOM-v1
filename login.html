@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Log In </title>
+    <link href="web.css" rel="stylesheet" type="css/text" />
+</head>
+<body id="top">
+
+<div id="lheader">
+    <!--logo and a tagline-->
+    <img src="Images/mmom.png" alt="logo" id="logo" /> <br />
+    Buy &amp; Sell whatever you want!!
+</div>
+
+<div id="rheader">
+    <!--search bar -->
+    <form action="buy.html" method="post">
+        <label for="search">
+            <input id="search" type="search" name="search" placeholder="Search a product" size="70"/>
+        </label>
+        <input align="center" type="image" src="Images/ss.jpg" alt="Search" height="100" width="100" />
+    </form>
+
+    <!--dropdown menu-->
+    <ul class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="#top">Log In</a></li>
+        <li><a href="ad.html">Place Ad</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="home.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <br /><br />
+</div>
+
+<br /><br /><br />
+
+<form class="clear" id="form" action="order.html" method="post">
+    <label for="nm"> User Name: </label>
+    <input id="nm" type="text" name="name" value="name" placeholder="User Name" size="15" />     <!--placeholder not working, rather value is doing the task of it-->
+    <!--value att na do to placeholder chl rha he-->
+    <br /><br />
+
+    <label for="pw"> Password:</label>
+    <input id="pw" type="password" name="password" value="password" placeholder="Password" size="17" />
+
+    <br /><br /><br />
+    <pre><input type="submit" name="submit" value="Sign In" />      <label for="nuser"> New User? </label><button id="nuser"> <a href="signup.html">Sign Up</a> </button></pre>
+</form>
+</body>
+</html>

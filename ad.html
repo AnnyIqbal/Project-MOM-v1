@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place an Ad</title>
+    <link href="web.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="top">
+
+<div id="lheader">
+    <!--logo and a tagline-->
+    <img src="Images/mmom.png" alt="logo" id="logo" /> <br />
+    Buy &amp; Sell whatever you want!!
+</div>
+
+<div id="rheader">
+    <!--search bar -->
+    <form action="buy.html" method="post">
+        <label for="search">
+            <input id="search" type="search" name="search" placeholder="Search a product" size="70"/>
+        </label>
+        <input align="center" type="image" src="Images/ss.jpg" alt="Search" height="100" width="100" />
+    </form>
+
+    <!--dropdown menu-->
+    <ul class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="#top">Place Ad</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="home.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <br /><br />
+</div>
+
+<h1 class="clear">Place Your Ad Here</h1>
+
+<form id="form" class="clear" action="login.html" method="post">
+
+    Your Name :
+    <input class="name" type="text" name="seller" value="Seller's Name" required="required" />
+
+    <br /><br />
+
+    Your Email :
+    <input class="name" type="email" name="email" value="Email" required="required" />
+
+    <br /><br />
+
+    Upload the Ad :
+    <input id="pic" type="file" name="pic" value="pic" />
+
+    <br /><br />
+
+    <textarea name="description" rows="5" cols="68"> Your Product Description here </textarea>
+
+    <br /><br />
+
+    <input type="image" id="button" src="Images/submit.png" alt="Submit" />
+
+</form>
+
+</body>
+</html>

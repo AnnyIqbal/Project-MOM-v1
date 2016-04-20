@@ -1,0 +1,22 @@
+td, th
+{
+    padding:20px;
+    margin:20px;
+    border: 2px solid black;
+}
+input#button
+{
+    height:50px;
+    width:120px;
+    align:center; /*not working*/
+}
+textarea
+{
+    height: 70px;
+    width: 300px;
+}
+#qty
+{
+    height:25px;
+    width:50px;
+}

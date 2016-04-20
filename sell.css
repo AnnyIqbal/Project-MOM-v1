@@ -1,0 +1,36 @@
+form#clear
+{
+    border: 2px solid darkolivegreen;
+    color:whitesmoke;
+    background-color:olivedrab;
+    padding:15px;
+    margin:5px;
+}
+
+form#clear input.srect
+{
+    border: 1px solid black;
+    height:25%;
+    width:15%;
+
+}
+input#button
+{
+    height:8%;
+    width:10%;
+}
+.name
+{
+    height:25%;
+    width:30%;
+}
+.small
+{
+    height:25%;
+    width:26.8%;
+}
+.mod
+{
+    height:25%;
+    width:11.5%;
+}

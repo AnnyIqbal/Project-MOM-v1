@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title> Submit Order </title>
+    <link href="order.css" rel="stylesheet" />
+    <link href="web.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="top">
+
+<div id="lheader">
+    <!--logo and a tagline-->
+    <img src="Images/mmom.png" alt="logo" id="logo" /> <br />
+    Buy &amp; Sell whatever you want!!
+</div>
+
+<div id="rheader">
+    <!--search bar -->
+    <form action="buy.html" method="post">
+        <label for="search">
+            <input id="search" type="search" name="search" placeholder="Search a product" size="70"/>
+        </label>
+        <input align="center" type="image" src="Images/ss.jpg" alt="Search" height="100" width="100" />
+    </form>
+
+    <!--dropdown menu-->
+    <ul class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="ad.html">Place Ad</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="home.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <br /><br />
+</div>
+
+<form class="clear" action="deliver.html" method="post">
+
+    <table>
+
+        <tr>
+            <th colspan="2">"Thank You for Shopping" </th>
+        </tr>
+
+        <tr>
+            <td class="pad"> Quantity ordered : <input type="text" id="qty" name="qty" value="(Pcs)" /> </td>
+            <td rowspan="3"> <img src="Images/tyfs.png" alt="Thankyou for shopping" /> </td>
+        </tr>
+
+        <tr>
+            <td class="pad"> Postal Address : <br /> <textarea name="adr" value="address"> Where to deliver your parcel? </textarea> </td>
+        </tr>
+
+        <tr>
+            <td class="pad"> Payment Method : <br />
+
+                <br />	<input type="radio" id="card" name="pmt" value="card" />
+                <label for="card"> Credit/Debit/ATM Card </label>
+
+                <br />	<input type="radio" id="bank" name="pmt" value="bank" />
+                <label for="bank"> Bank Account </label>
+
+                <br />	<input type="radio" id="gateway" name="pmt" value="gateway" />
+                <label for="gateway"> Payment Gateway </label>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> <input type="image" id="button" src="Images/submit.png" alt="submit order" /> </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

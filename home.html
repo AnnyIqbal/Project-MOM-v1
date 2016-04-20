@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> MOM - My Online Market </title>
+    <link href="web.css" rel="stylesheet" type="css/text" />
+</head>
+<body id="top">
+
+<div id="lheader">
+    <!--logo and a tagline-->
+    <img src="Images/mmom.png" alt="logo" id="logo" /> <br />
+    Buy &amp; Sell whatever you want!!
+</div>
+
+<div id="rheader">
+    <!--search bar -->
+    <form action="buy.html" method="post">
+        <label for="search">
+            <input id="search" type="search" name="search" placeholder="Search a product" size="80"/>
+        </label>
+        <input align="center" type="image" src="Images/ss.jpg" alt="Search" height="100" width="100" />
+    </form>
+
+    <!--dropdown menu-->
+    <ul class="dropdown">
+        <li><a href="#top">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="ad.html">Place Ad</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+    </ul>
+
+    <br /><br />
+</div>
+<!-- select for dropdown menu, but isme a ka tag ni chal rha
+    <select>
+            <option><a href="home.html">Home</a></option>
+            <option value="buy"><a href="buy.html">Buy</a></option>
+            <option value="sell"><a href="sell.html">Sell</a></option>
+            <option value="ad">Advertise</option>
+    </select>
+    <select>
+        <option>Log In</option>
+        <option value="member"><a href="login.html">Member</a></option>
+        <option value="new"><a href="signup.html">New User</a></option>
+    </select>
+    <select>
+        <option>Contact Us</option>
+        <option value="email"><a href="mailto:abc@gmail.com">Shoot an Email</a></option>
+        <option value="feedback">Feedback</option>
+        <option value="query">Queries/Complaints</option>
+    </select>
+-->
+<!-- jugaar method for dropdown menu
+        <a href="#top">Home</a>
+        <a href="buy.html">Buy</a>
+        <a href="sell.html">Sell</a>
+        <a href="login.html">Log In</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+-->
+<!-- horizontal list for dropdown menu
+    <ul id="dropdown">
+        <li><a href="home.html">Home</a></li>
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li>Advertise</li>
+            </ul>
+        <li>Product Categories</li>
+        <li>Log In</li>
+            <ul>
+                <li><a href="login.html">Member</a></li>
+                <li><a href="signup.html">New User</a></li>
+            </ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+            <ul>
+                <li><a href="mailto:abc@gmail.com">Shoot an Email</a></li>
+                <li><input type="textbox" value="Leave a Message"/></li>
+                <li>Feedback</li>
+                <li>Queries/Complaints</li>
+            </ul>
+    </ul>
+-->
+
+<!--image slider jugaar, marquee images -->
+<marquee>
+    <figure id="slider">
+        <img class="slider" alt="beverages" src="Images/bb.jpg" />
+        <img class="slider" alt="books" src="Images/book.jpg" />
+        <img class="slider" alt="cell Phones" src="Images/cp.jpg" />
+        <img class="slider" alt="cars" src="Images/cc.jpg" />
+        <img class="slider" alt="dresses" src="Images/dr.jpg" />
+        <img class="slider" alt="food" src="Images/fffffff.jpg" />
+        <img class="slider" alt="hand bags" src="Images/bags.jpg" />
+        <img class="slider" alt="jackets" src="Images/jss.jpg" />
+        <img class="slider" alt="jewellery" src="Images/j.jpg" />
+        <img class="slider" alt="shoes" src="Images/sandals.jpg" />
+    </figure>
+</marquee>
+
+<!--Using form->table for Product Categories -->
+<div id="box">
+ <form id="buttons" action="about-us.html" method="post">
+     <table>
+         <tr>   <th>  Select Category  </th> </tr>
+         <tr>   <td>   <button formaction="#bev">   Beverages    </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#book">  Books        </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#cell">  Cell Phones  </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#car">   Cars         </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#dress"> Dresses      </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#food">  Food         </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#bag">   Hand Bags    </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#jack">  Jackets      </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#jew">   Jewellery    </button>  </td>   </tr>
+         <tr>   <td>   <button formaction="#shoe">  Shoes        </button>  </td>   </tr>
+     </table>
+<!--Using select for Product Categories
+     <label for="cat">
+         <select id="cat">
+             <option value="null">Select Category</option>
+             <option value="acc">Accessories</option>
+             <option value="books">Books</option>
+             <option value="caterers">Caterers</option>
+             <option value="decor">Decor</option>
+             <option value="dress">Dresses</option>
+             <option value="food">Food</option>
+         </select>
+     </label>
+-->
+ </form>
+</div>
+<!-- box layout for buy, sell and advertise -->
+
+<div class="box">
+    <h2>Buy</h2>
+    <p>We've got everything - that is for sale!</p> <br /><br/>
+    <button class="click"><a href="buy.html">Product Portfolio</a></button>
+</div>
+
+<div class="box">
+    <h2>Sell</h2>
+    <p>Fill in the form with a picture and details about your product!</p> <br />
+    <button class="click"><a href="sell.html">Fill Form</a></button>
+</div>
+
+<div class="box">
+    <h2>Advertise</h2>
+    <p>Do you want to place your Ad on MOM ??</p> <br /><br/>
+    <button class="click"><a href="ad.html">Place Ad</a></button>
+</div>
+
+<!--table of pics that will lead to a specific page of the product to be purchased -->
+ <form action="buy.html" method="post">
+
+    <table id="pics">
+ <!--       <caption>CATEGORIES</caption>       -->
+        <tr id="bev">
+        <!-- used button but input type=image is better
+            <td><figure><button formaction="buy.html"><img src="file:///C:/Users/kashif/Desktop/buttons/bbbb.jpg" alt="Limka Drink" /><figcaption>Limka Drink</figcaption></button></figure></td>
+        -->
+            <td><figure><input type="image" formaction="buy.html" src="Images/bbbb.jpg" alt="Limka Drink" /><figcaption>Limka Drink</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/bb.jpg" alt="Shakes" /><figcaption>Shakes</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/bbbbb.jpg" alt="Syrups" /><figcaption>Syrups</figcaption></figure></td>
+        </tr>
+        <tr id="book">
+            <td><figure><input type="image" formaction="buy.html" src="Images/books.jpg" alt="Books"/><figcaption>Books</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/bk.jpg" alt="General"/><figcaption>General Books</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/bok.jpg" alt="Collection"/><figcaption>Collection</figcaption></figure></td>
+        </tr>
+        <tr id="cell">
+            <td><figure><input type="image" formaction="buy.html" src="Images/img.jpg" alt="Smart Phones"/><figcaption>Smart Phones</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/sp.jpg" alt="Cell Phones"/><figcaption>Cell Phones</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/p.jpg" alt="Mobile Phones"/><figcaption>Mobile Phones</figcaption></figure></td>
+        </tr>
+        <tr id="car">
+            <td><figure><input type="image" formaction="buy.html" src="Images/cccc.jpg" alt="Limbourgini" /><figcaption>Limbourgini</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/c.jpg" alt="Honda" /><figcaption>Honda</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/cc.jpg" alt="Civic" /><figcaption>Civic</figcaption></figure></td>
+        </tr>
+        <tr id="dress">
+            <td><figure><input type="image" formaction="buy.html" src="Images/shrt.jpg" alt="Shirt"/><figcaption>Dress Shirt</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/dr.jpg" alt="Dress"/><figcaption>Red Dress</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/d.jpg" alt="Black Dress"/><figcaption>Black Dress</figcaption></figure></td>
+        </tr>
+        <tr id="food">
+            <td><figure><input type="image" formaction="buy.html" src="Images/ffffff.jpg" alt="Drum Sticks" /><figcaption>Drum Sticks</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/fffffff.jpg" alt="Kababs" /><figcaption>Kababs</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/ff.jpg" alt="Fish" /><figcaption>Fish</figcaption></figure></td>
+        </tr>
+        <tr id="bag">
+            <td><figure><input type="image" formaction="buy.html" src="Images/bag.jpg" alt="Red Bag"/><figcaption>Red Bag</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/gb.jpg" alt="Green Bag"/><figcaption>Green Bag</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/bag2.jpg" alt="Pink Bag"/><figcaption>Pink Bag</figcaption></figure></td>
+        </tr>
+        <tr id="jack">
+            <td><figure><input type="image" formaction="buy.html" src="Images/jt.jpg" alt="Black Jacket"/><figcaption>Black Jacket</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/ja.jpg" alt="Brown Jacket"/><figcaption>Brown Jacket</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/jk.jpg" alt="Blue Jacket"/><figcaption>Blue Jacket</figcaption></figure></td>
+        </tr>
+        <tr id="jew">
+            <td><figure><input type="image" formaction="buy.html" src="Images/ear.jpg" alt="Earings"/><figcaption>Earings</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/jw.jpg" alt="Diamonds"/><figcaption>Diamonds</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/jc.jpg" alt="Jhumkey"/><figcaption>Jhumkey</figcaption></figure></td>
+        </tr>
+        <tr id="shoe">
+            <td><figure><input type="image" formaction="buy.html" src="Images/sand.jpg" alt="Red Heels"/><figcaption>Red Heels</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/sandal.jpg" alt="Sandals"/><figcaption>Sandals</figcaption></figure></td>
+            <td><figure><input type="image" formaction="buy.html" src="Images/shoe.jpg" alt="Multi Color"/><figcaption>Multi Color</figcaption></figure></td>
+        </tr>
+    </table>
+</form>
+
+<br /><br /><br />
+<!--Contact Us -->
+    <h1 class="clear" id="contactus"> Feel Free to Contact Us </h1>
+<!--form to contact -->
+<form action="http://www.google.com.pk" method="post">
+    <div id="msgbox">
+        <p><label for="name">Name : </label>
+            <input type="text" name="name" value="name" id="name" /></p>
+
+        <p><label for="email">E-mail : </label>
+            <input type="email" name="email" value="email" id="email" /></p>
+
+        <p><label for="sub">Subject : </label>
+            <input type="text" name="subj" value="subject" id="sub" /></p>
+
+        <p>
+            <label for="msg">Message : </label> <br /><br />
+            <textarea id="msg" rows="10" cols="45"> Your Message </textarea>
+        </p>
+
+        <p><input id="buton" type="button" name="button" value="Send" /></p>
+    </div>
+
+<!-- address, contact # and email of company with a google map window -->
+
+    <div id="cont">
+        <figure>
+        <figcaption>Find Us @</figcaption>
+        <iframe id="gmap" src="https://www.google.com/maps/place/Block+J,+Karachi,+Pakistan/"> </iframe>
+        </figure>
+
+        <p><img align="center" src="Images/add.jpg" alt="address" />
+            J-55, Block 'Q', North Nazimabad, Karachi.</p>
+
+        <p><img align="center" src="Images/cal.jpg" alt="phone#" />
+            0333 - 9999000</p>
+
+        <p><img align="center" src="Images/email.jpg" alt="email" />
+            Someone@mom.com</p>
+    </div>
+</form>
+
+<div id="footer">
+<br /><br />
+    <a href="#top">Back to Top</a>
+<br /><br />
+    <footer>
+<!--dropdown menu-->
+        <ul class="dropdown">
+            <li><a href="#top">Home</a></li>
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li> <a href="login.html">Log In</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

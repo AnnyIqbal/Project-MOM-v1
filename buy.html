@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Buy </title>
+    <link href="web.css" rel="stylesheet" type="css/text" />
+</head>
+<body id="top">
+
+<div id="lheader">
+    <!--logo and a tagline-->
+    <img src="Images/mmom.png" alt="logo" id="logo" /> <br />
+    Buy &amp; Sell whatever you want!!
+</div>
+
+<div id="rheader">
+    <!--search bar -->
+    <form action="buy.html" method="post">
+        <label for="search">
+            <input id="search" type="search" name="search" placeholder="Search a product" size="70"/>
+        </label>
+        <input align="center" type="image" src="Images/ss.jpg" alt="Search" height="100" width="100" />
+    </form>
+
+    <!--dropdown menu-->
+    <ul class="dropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#top">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="ad.html">Place Ad</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="home.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <br /><br />
+</div>
+
+<br /><br />
+<form class="clear" action="login.html" method="post" class="buy">
+    <table>
+
+        <tr>
+            <th scope="row"> Red Dress </th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td rowspan="6"> <img src="Images/dr.jpg" alt="Product Name" height="25%" width="25%" /> </td>
+            <td> Brand Name : Clothings </td> <!-- Store all details in a DB, and then retreive relevant product info as per fields -->
+        </tr>
+
+        <tr>
+            <td> Product Category : Female Dress </td>
+        </tr>
+
+        <tr>
+            <td> Size : Medium </td>
+        </tr>
+
+        <tr>
+            <td> Color : Red </td>
+        </tr>
+
+        <tr>
+            <td> Model # FDMR00 </td>
+        </tr>
+
+        <tr>
+            <td> Price : Rs. 5,000/= </td>
+        </tr>
+    </table>
+
+    <br /><br /><br />
+
+    <input id="buynow" type="image" src="Images/buynow.png" alt="buy" />
+
+</form>
+</body>
+</html>
